@@ -1,0 +1,490 @@
+body{
+  background-color: #f7d154;
+  margin: 0;
+  padding: 0;
+}
+
+/*cabezera*/
+header{
+    background-color: black;
+    margin: auto;
+}
+
+.barra{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+}
+
+#menuenlace a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#menuenlace a:hover{
+    transition: 0.5s ease-in;
+    color: black;
+    background:  #fec400;
+    box-shadow:0 0 5px  #fec400, 0 0 25px  #fec400, 0 0 50px  #fec400, 0 0 200px  #fec400;
+}
+    
+
+/*titulos de las secciones*/
+@font-face{
+    font-family: "MiFuente2";
+    src: url(Fuentes/Barista\ Script.otf);
+}
+.fuenteSeccion{
+    font-family: "MiFuente2", Arial, Helvetica, sans-serif;
+    color: black ;
+   font-size: 30px;
+}
+
+
+/*bienvenidos*/
+.seccionInicio{
+    width:100%;
+    height:600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("Imagenes/Bienvenidos.jpg");
+    background-size:contain;
+    background-position: center; 
+}
+
+.textoInicio{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    opacity: 0.6;
+}
+
+@font-face{
+    font-family: "MiFuente";
+    src: url(Fuentes/Olivia.ttf);
+}
+.fraseInicio{
+    font-family: "MiFuente",Arial, Verdana, sans-serif;
+    color: white;
+    font-size: 75px;
+    text-align: center;
+}
+
+
+/*acecad de*/
+#acercade{
+    display: flex;
+    margin: 10px;
+}
+
+.ImgacercaDe{
+    width: 500px;
+    margin-top: 10px;
+}
+
+/*menu*/
+#menu{
+  margin: 10px;
+}
+.fondodelastarjetas{
+    background-color: #fec400;
+    display: flex;
+    justify-content: center;
+    height:450px; 
+}
+
+.contenedor2 {
+    display: grid;
+    height: 100vh;
+    display: flex;
+}
+
+.tarjeta{
+    width: 250px;
+    height: 350px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    margin: 40px;
+}
+
+.imagenTarjeta {
+    background-color: rgb(176, 238, 157);  
+    width: 100%;
+    height: 50%;
+    border-radius: 6px 6px 0 0;
+}
+    
+.imagenTarjeta .imagenInterna {
+    width: 100%;
+    height: 100%;        
+    border-radius: 10px;
+}
+
+.categorias {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    padding: 10px 7px 0px;
+    text-align: center;
+
+}
+
+.tarjeta:hover  {    
+    transform: translateY(0) scale(1.2);
+}
+
+ /*equipo*/
+ #equipo{
+  margin: 10px;
+ }
+ .contenedorChef{
+    display: flex;
+    justify-content: center;
+ }    
+
+.contenedor3{
+    background-color: rgb(236, 225, 225);
+    width: 300px;
+    height: 510px;
+    margin: 50px;
+}
+
+.subcontenedor{
+    width: auto;
+}
+
+.chef{
+    height: 300px;
+    width: 300px;
+}
+
+.nombreChef{
+    text-align: center;
+    color: black;
+}
+
+a{
+    position: relative;
+    display: inline-block;    
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    margin: 38px;
+    font-size: 20px;
+}
+
+.facebook{
+    color: #1877f2;
+}
+
+.twitter{
+    color: #1c96e8;
+}
+
+.linkedin{
+    color: #0077b7;
+}
+
+/*formulario*/
+#reservarMesa{
+  margin: 10px;
+}
+.fondoformulario{
+  background-color: #fec400;
+    height:360px; 
+    padding:15px; 
+}
+
+.campo{
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 5px 5px;
+}
+
+/*contacto*/
+#contacto{
+  margin: 10px;
+}
+.mapa{
+    display: flex;
+        
+}
+iframe{
+  width: 500px;
+  height: auto;
+ 
+}
+.contenidodecontacto{
+    display: block;
+    margin:10px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    height: 50px;
+}
+
+.contenidofooter{
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.irArriba{
+	width:40px;
+	height:40px;			
+	text-indent:-9999px;
+	opacity:0.3;
+	position:fixed;
+	bottom:20px;
+	right:40px;
+	display:none;			
+	background:url("Imagenes/icon_top.png") no-repeat;
+}
+
+.irArriba:hover{
+	opacity:0.8;
+}
+
+/*responsivo 600px*/
+@media (max-width: 600px) {
+    .fuenteSeccion{
+        font-family: "MiFuente2", Arial, Helvetica, sans-serif;
+        color: black ;
+       font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+  #bienvenidos{
+    display: block; 
+    width: 100%;
+    height: 300px;
+  
+    
+  }
+}
+@media (max-width: 600px) {
+  .textobienvenidos{
+    margin: 0;
+   
+  }
+}
+
+@media (max-width: 600px) {
+  .seccionInicio{
+    display: block; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    
+ }
+}
+
+@media (max-width: 600px) {
+  .textoInicio{
+  font-size: 24px;
+  line-height: 300px;
+  
+  }
+}
+
+@media (max-width: 600px) {
+  #acercade{
+  display: block;
+  }
+}
+@media (max-width: 600px) {
+  .ImgacercaDe{
+    width: 580px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .fondodelastarjetas {
+    display: block;
+    height: auto;
+   
+    
+  }
+}
+@media (max-width:600px) {
+  .tarjeta {
+    display: block;
+    height: auto;
+    margin: 4px auto;
+   
+    
+  }
+} 
+
+@media (max-width: 600px) {
+  .contenedorChef {
+    display: block;
+    
+  }
+} 
+@media (max-width: 600px) {
+  .contenedor3 {
+    margin: auto;
+    margin-top: 15px;
+    
+  }
+} 
+/*responsivo* 320px*/
+@media (max-width: 320px) {
+    .fuenteSeccion{
+        font-family: "MiFuente2", Arial, Helvetica, sans-serif;
+        color: black ;
+       font-size: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+   #menuenlace a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+}
+}
+
+@media (max-width: 320px) {
+    .barra{
+      display: block; 
+    }
+}
+
+@media (max-width: 320px) {
+    .logo{
+      display: block; 
+      margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    #bienvenidos{
+      display: block; 
+      width: 100%;
+      height: 200px;
+     
+     
+    }
+}
+
+@media (max-width: 320px) {
+  .textobienvenidos{
+  margin:0;
+ 
+   
+  }
+}
+@media (max-width: 320px) {
+    .seccionInicio{
+      display: block; 
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+   }
+}
+@media (max-width: 320px) {
+    .textoInicio{
+    font-size: 24px;
+    line-height: 200px;
+   }
+}
+
+
+
+@media (max-width: 320px) {
+    #acercade{
+    display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .ImgacercaDe{
+      width: 300px;
+      margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .fondodelastarjetas {
+      display: block;
+      height: auto;
+    }
+}
+@media (max-width: 320px) {
+    .tarjeta {
+      display: block;
+      height: auto;
+      margin: 20px;
+    }
+  } 
+
+  @media (max-width: 320px) {
+    .contenedorChef {
+      display: block;
+    }
+  } 
+
+  @media (max-width: 320px) {
+    .contenedor3 {
+      margin: auto;
+      margin-top: 15px;
+      
+    }
+  } 
+
+  @media (max-width: 320px) {
+    .mapa {
+      display: block;
+      width: 250px;
+      
+    }
+  }
+
+  @media (max-width: 320px) {
+    iframe{
+      width: 300px;
+      margin: auto;
+      
+    }
+  }
+
+  @media (max-width: 320px) {
+    .contenidofooter{
+      display: block;
+      margin: auto;
+    }
+  }
+
+  
